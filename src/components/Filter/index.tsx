@@ -7,7 +7,6 @@ import { StatusIcon } from "../StatusIcon";
 type Props =  TouchableOpacityProps& {
   status: FilterStatus
   isActive: boolean
-
 }
 
 export function Filter({ status, isActive, ...rest }: Props) {
@@ -19,8 +18,8 @@ export function Filter({ status, isActive, ...rest }: Props) {
     >
       <StatusIcon status={status}/>
       <Text style={styles.title}>
-        {status === FilterStatus.DONE ? "Comprados" : 
-        "Pendentes"}
+        {status === FilterStatus.DONE ? "Comprados" : "Pendentes"
+        }
       </Text>
     </TouchableOpacity>
   )
